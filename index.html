@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo do IMC</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+    <header id="cabecalho">
+        <img id="logotipo" src="logoac.png">
+        <h1 id="nome">Academia QualiMeta</h1>
+    </header>
+    <div id="textoecalc">
+        <div id="texto">
+            <h1>O IMC é o índice de massa corporal</h1>
+            <p>
+              O IMC (Índice de Massa Corporal) é um cálculo universal adotado pela OMS (Organização Mundial da Saúde)
+             para classificar padrões de saúde relacionados ao peso, como desnutrição e obesidade, principalmente em 
+             populações.
+            </p>
+            <p>
+              A fórmula do IMC foi criada pelo matemático e astrônomo belga Lambert Adolphe Jacques Quételet em 1832 e
+            recebeu originalmente o nome de "Índice de Quételet", mas foi rebatizada com o nome atual pela OMS em 1972.
+            </p>
+            <p>
+              Faz-se uma relação do peso com a altura ao quadrado do indivíduo, ou seja, sugere dividir o peso pela altura
+               multiplicada por ela mesma. Veja: IMC = Peso ÷ (Altura × Altura).
+            </p>
+        </div>
+        <div id="formexibir">
+        <form id="formulario">
+            <label class="labels" for="peso">Peso:</label><br>
+            <input type="number" name="peso" id="peso"><br>
+            <label class="labels" for="altura">Altura:</label><br>
+            <input type="number" name="altura" id="altura"><br>
+            <button id="botao" onclick="calculoimc()">CALCULAR</button><br>
+        </form>
+        <div id="exibirimc">Resultado</div>
+        </div>
+    </div>
+</body>
+</html>
